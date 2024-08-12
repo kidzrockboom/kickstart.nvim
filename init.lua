@@ -204,7 +204,6 @@ vim.filetype.add {
 -- Keybind for openin netrw
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
-=======
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -606,10 +605,6 @@ require('lazy').setup({
         },
         pyright = {},
         rust_analyzer = {},
-        clangd = {},
-        gopls = {},
-        pyright = {},
-        rust_analyzer = {},
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -958,7 +953,6 @@ require('lazy').setup({
         'vim',
         'vimdoc',
       },
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
