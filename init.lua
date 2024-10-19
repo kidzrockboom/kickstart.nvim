@@ -201,6 +201,13 @@ vim.filetype.add {
   },
 }
 
+-- Binding for err != nil for go
+vim.keymap.set('n', '<leader>ee', 'oif err != nil {<CR>}<Esc>Oreturn err<Esc>')
+
+-- For moving a line up or down
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
 -- Keybind for openin netrw
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
