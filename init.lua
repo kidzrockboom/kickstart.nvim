@@ -118,7 +118,7 @@ vim.opt.showmode = false
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.schedule(function()
-  vim.opt.clipboard = 'unnamedplus'
+  vim.opt.clipboard:append 'unnamedplus'
 end)
 
 -- Enable break indent
@@ -949,9 +949,6 @@ require('lazy').setup({
         'luadoc',
         'go',
         'gomod',
-        'gotmpl',
-        'gosum',
-        'gowork',
         'templ',
         'rust',
         'markdown',
